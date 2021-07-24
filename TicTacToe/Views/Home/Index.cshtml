@@ -12,11 +12,11 @@
         {
             @if (cell.IsBlank)
             {
-                <button type="submit" name="Selected.Id"  class="btn btn-outline-dark">&nbsp;</button>
+                <button type="submit" name="Selected.Id" value="@cell.Id"  class="btn btn-outline-dark">&nbsp;</button>
             }
             else
             {
-                <button class="btn btn-outline-dark" disabled>&nbsp;</button>
+                <button class="btn btn-outline-dark" disabled>@cell.Mark</button>
             }
             @if (cell.IsEndCell)
             {
